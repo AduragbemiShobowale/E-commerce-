@@ -1,0 +1,86 @@
+.body {
+  background-image: url(./nasa-yZygONrUBe8-unsplash.jpg);
+}
+
+.dropDown {
+  background-color: lavender;
+  color: black;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.4s ease-in-out;
+}
+
+.dropDown.active {
+  transform: scaleY(1);
+}
+
+.dropDown a:hover {
+  color: white;
+  background-color: gray;
+}
+
+.dropDown a {
+  color: black;
+}
+
+.poet {
+  cursor: pointer;
+}
+
+.groupList {
+  background-color: lavender;
+  transform: scaleY(0);
+  transition: 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+.groupList.active {
+  transform: scaleY(1);
+}
+
+.groupList p {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.groupList p:hover {
+  background-color: grey;
+  color: white;
+}
+
+.bi-arrow-down-up {
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.bi-arrow-down-up.active {
+  transform: rotate(180deg);
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (width > 430px) {
+  .collections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width > 900px) {
+  .collections {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.collections img {
+  height: 200px;
+  width: 100%;
+}
+
+.hero-section {
+  padding: 10% 0;
+  margin-bottom: 30px;
+}
